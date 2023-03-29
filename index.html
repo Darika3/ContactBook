@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- modal -->
+      <div id="modal">
+        <h2 id="modalHeader">Modal</h2>
+        <div class="modal_top">
+          <input id="inpEditName" type="text" />
+          <input id="inpEditNum" type="text" />
+          <input id="inpEditImg" type="text" />
+
+          <button id="modalBtn">Save changes</button>
+        </div>
+
+        <button id="modalClose">Close</button>
+      </div>
+      <!-- end of modal -->
+
+      <!-- Start ContactBook -->
+
+      <div id="cbCreate">
+        <h1 id="h1">Contact Book</h1>
+        <form id="cbinner">
+          <h2>Add new contact</h2>
+          <input
+            class="inpts"
+            id="name"
+            placeholder="Enter your name"
+            type="text"
+          />
+          <input
+            class="inpts"
+            id="number"
+            placeholder="Enter your phone"
+            type="number"
+          />
+          <input
+            class="inpts"
+            id="img"
+            placeholder="Enter your img-url"
+            type="text"
+          />
+          <button id="btnCreate">Add</button>
+        </form>
+      </div>
+
+      <ul id="list"></ul>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
